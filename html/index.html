@@ -1,0 +1,512 @@
+<?php header('Content-type: text/html; charset=utf-8')?>
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Система спутникового мониторинга Куратор</title>
+    <meta name="description" content="Куратор система спутникового мониторинга. GPS/ГЛОНАСС мониторинг автотранспорта, спецтехники, электронные карты полей и контроль топлива">
+    <meta name="keywords" content="GPS, ГЛОНАСС, GPS мониторинг, спутниковый мониторинг, контроль сливов, контроль топлива, слежение за техникой, слежение за автомобилем">
+    <link rel="icon" type="image/png" href="/img/ico.png" />
+    <link href="https://fonts.googleapis.com/css?family=Exo+2" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel='stylesheet' href="/css/style.css" />
+    <link rel='stylesheet' href="/css/animate.min.css" />
+    <link rel='stylesheet' href="/css/lightbox.css" />
+</head>
+
+<body class="home">
+    <header class="header">
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-light">
+            <div class="container">
+                <a class="navbar-brand" href="/" data-target="#">
+                    <img src="/img/logo.png" alt="Curator" class="img-fluid">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar2" aria-controls="exCollapsingNavbar2" aria-expanded="false" aria-label="Toggle navigation">
+                    &#9776;
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="exCollapsingNavbar2">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="/">Главная<span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/device/">Оборудование</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="http://radiocity.kz/gps-navigaciya/" target="_blank">Магазин</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/contacts">Контакты</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section id="main" class="section main mt-3 mt-md-5 pt-md-5">
+        <div class="container">
+            <div class="section-header">
+                <h1>Система спутникового мониторинга</h1>
+            </div>
+            <div class="central-image">
+                <div class="h-100 d-none d-lg-flex justify-content-lg-end align-items-lg-start">
+                    <div class="d-inline-flex flex-lg-column mt-lg-4">
+                        <a href="/support/customer.pl" target="_blank" class="btn btn-outline-light rounded-0 w-100" role="button" aria-pressed="true">Техподдержка</a>
+                        <a href="http://gps1.curator.kz" target="_blank" class="btn btn-outline-light rounded-0 w-100" role="button" aria-pressed="true">Мониторинг</a>
+                        <a href="http://gps1.curator.kz/?token=7c855223f884a6a9ff49b5d875ea743655862237ED749BD39315AB7F543093D807513339" target="_blank" class="btn btn-outline-light rounded-0 w-100" role="button" aria-pressed="true">Демо
+                            вход</a>
+                    </div>
+                </div>
+            </div>
+            <div class="d-lg-none d-flex justify-content-center align-items-center mb-md-4">
+                <div class="d-flex flex-column flex-md-row justify-content-between">
+                    <a href="/support/customer.pl" target="_blank" class="btn btn-outline-light rounded-0 mb-3 mb-md-2 mr-3" role="button" aria-pressed="true">Техподдержка</a>
+                    <a href="http://gps1.curator.kz" target="_blank" class="btn btn-outline-light rounded-0 mb-3 mb-md-2 mr-3" role="button" aria-pressed="true">Мониторинг</a>
+                    <a href="http://gps1.curator.kz/?token=7c855223f884a6a9ff49b5d875ea743655862237ED749BD39315AB7F543093D807513339" target="_blank" class="btn btn-outline-light rounded-0 mb-3 mb-md-2 mr-3" role="button" aria-pressed="true">Демо
+                        вход</a>
+                </div>
+            </div>
+            <div class="effects d-none d-md-block">
+                <h3 class="text-center mb-2">Что дает использование GPS/ГЛОНАСС мониторинга?</h3>
+                <div class="row circles appear-animated py-2">
+                    <div class="col-md-6 col-lg first circle">
+                        <strong class="align-middle text-center"></strong>
+                        <span>Сокращение затрат на эксплуатацию ТС</span>
+                    </div>
+                    <div class="col-md-6 col-lg second circle">
+                        <strong class="align-middle text-center"></strong>
+                        <span>Сокращение расходов на ГСМ</span>
+                    </div>
+                    <div class="col-md-6 col-lg third circle">
+                        <strong class="align-middle text-center"></strong>
+                        <span>Сокращение пробега и нецелевого использования ТС</span>
+                    </div>
+                    <div class="col-md-6 col-lg forth circle">
+                        <strong class="align-middle text-center"></strong>
+                        <span>Контроль дисциплины водителей</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="features" class="section features pb-5">
+        <div class="container">
+            <div class="section-header">
+                <h2><span class="page-header">Возможности GPS/ГЛОНАСС мониторинга</span></h2>
+                <div class="header-underline d-sm-none"></div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-md-6 col-lg-3">
+                    <div class="feature-item">
+                        <a href="/fuelcontrol" title="Узнать больше о контроле сливов и заправок">
+                            <div class="feature-icon feature-fuel mb-2"></div>
+                            <h5 class="feature-title">Контроль топлива</h5>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-md-6 col-lg-3">
+                    <div class="feature-item">
+                        <a href="/position" title="Узнать больше о контроле местоположения">
+                            <div class="feature-icon feature-place mb-2"></div>
+                            <h5 class="feature-title">Контроль местоположения</h5>
+                        </a>
+                    </div>
+                </div>
+                <!-- Добавить дополнительную clearfix только обязательные просмотра -->
+                <div class="clearfix hidden-sm-up"></div>
+
+                <div class="col-xs-12 col-md-6 col-lg-3">
+                    <div class="feature-item">
+                        <a href="/agregates" title="Узнать больше о контроле работы агрегатов">
+                            <div class="feature-icon feature-units mb-2"></div>
+                            <h5 class="feature-title">Контроль работы агрегатов</h5>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-md-6 col-lg-3">
+                    <div class="feature-item">
+                        <a href="/geofence" title="Узнать больше о геозонах и электронных картах полей">
+                            <div class="feature-icon feature-map mb-2"></div>
+                            <h5 class="feature-title">Геозоны <br> Электронные карты полей</h5>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="solutions" class="section solutions">
+        <div class="container">
+            <div class="section-header">
+                <h2><span class="page-header">Комплексные решения</span></h2>
+                <div class="header-underline d-sm-none"></div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-lg-6">
+                    <div class="solution-item appear-animated fade-left">
+                        <a href="/fuel_truck" title="Предложение для топливозаправщиков">
+                            <div class="row">
+                                <div class="col-md-4 left-icon">
+                                    <img class="img-fluid" src="/img/icon_fuel_tanker.png" alt="Предложение для топливозаправщиков">
+                                    <img class="img-fluid" src="/img/icon_fuel_tanker_hover.png" alt="Предложение для топливозаправщиков">
+                                </div>
+                                <div class="col-md-8 d-flex flex-column justify-content-center align-items-center align-items-md-start">
+                                    <h4 class="my-3">Топливозаправщики</h4>
+                                    <ul>
+                                        <li>Дата и точное время заправки/слива;</li>
+                                        <li>Объем заправок/сливов;</li>
+                                        <li>Учет выдачи топлива по карточкам;</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-lg-6">
+                    <div class="solution-item appear-animated fade-right">
+                        <a href="/trucking" title="Предложение для грузоперевозчиков">
+                            <div class="row">
+                                <div class="col-md-4 left-icon">
+                                    <img class="img-fluid" src="/img/icon_truck.png" alt="Предложение для грузоперевозчиков">
+                                    <img class="img-fluid" src="/img/icon_truck_hover.png" alt="Предложение для грузоперевозчиков">
+                                </div>
+                                <div class="col-md-8 d-flex flex-column justify-content-center align-items-center align-items-md-start">
+                                    <h4 class="my-3">Грузоперевозки</h4>
+                                    <ul>
+                                        <li>Контроль заправок и слива топлива;</li>
+                                        <li>Контроль реального расхода топлива за период;</li>
+                                        <li>Контроль маршрута движения за любой выбранный период времени;</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="clearfix hidden-sm-up"></div>
+
+                <div class="col-xs-12 col-lg-6">
+                    <div class="solution-item appear-animated fade-left">
+                        <a href="/city_service" title="Предложение для коммунальных служб">
+                            <div class="row">
+                                <div class="col-md-4 left-icon">
+                                    <img class="img-fluid" src="/img/icon_lift_truck.png" alt="Предложение для коммунальных служб">
+                                    <img class="img-fluid" src="/img/icon_lift_truck_hover.png" alt="Предложение для коммунальных служб">
+                                </div>
+                                <div class="col-md-8 d-flex flex-column justify-content-center align-items-center align-items-md-start">
+                                    <h4 class="my-3">Коммунальные службы</h4>
+                                    <ul>
+                                        <li>Контроль поездок, остановок, стоянок;</li>
+                                        <li>Контроль посещения геозон и точек отмеченных пользователем;</li>
+                                        <li>Расчет расхода топлива по пробегу или моточасам;</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-lg-6">
+                    <div class="solution-item appear-animated fade-right">
+                        <a href="/passenger" title="Предложение для пассажирских перевозок">
+                            <div class="row">
+                                <div class="col-md-4 left-icon">
+                                    <img class="img-fluid" src="/img/icon_bus.png" alt="Предложение для пассажирских перевозок">
+                                    <img class="img-fluid" src="/img/icon_bus_hover.png" alt="Предложение для пассажирских перевозок">
+                                </div>
+                                <div class="col-md-8 d-flex flex-column justify-content-center align-items-center align-items-md-start">
+                                    <h4 class="my-3">Пассажирские перевозки</h4>
+                                    <ul>
+                                        <li>Контроль заправок и слива топлива;</li>
+                                        <li>Контроль реального расхода топлива за период;</li>
+                                        <li>Контроль маршрута движения за любой выбранный период времени;</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="clearfix hidden-sm-up"></div>
+
+                <div class="col-xs-12 col-lg-6">
+                    <div class="solution-item appear-animated fade-left">
+                        <a href="/agriculture" title="Предложение для сельского хозяйства">
+                            <div class="row">
+                                <div class="col-md-4 left-icon">
+                                    <img class="img-fluid" src="/img/icon_combine.png" alt="Предложение для сельского хозяйства">
+                                    <img class="img-fluid" src="/img/icon_combine_hover.png" alt="Предложение для сельского хозяйства">
+                                </div>
+                                <div class="col-md-8 d-flex flex-column justify-content-center align-items-center align-items-md-start">
+                                    <h4 class="my-3">Сельское хозяйство</h4>
+                                    <ul>
+                                        <li>Повышение эффективности использования техники;</li>
+                                        <li>Контроль за расходом топлива;</li>
+                                        <li>Сокращение простоев;</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-lg-6">
+                    <div class="solution-item appear-animated fade-right">
+                        <a href="/building_enterprise" title="Предложение для стоительных организаций">
+                            <div class="row">
+                                <div class="col-md-4 left-icon">
+                                    <img class="img-fluid" src="/img/icon_concrete.png" alt="Предложение для стоительных организаций">
+                                    <img class="img-fluid" src="/img/icon_concrete_hover.png" alt="Предложение для стоительных организаций">
+                                </div>
+                                <div class="col-md-8 d-flex flex-column justify-content-center align-items-center align-items-md-start">
+                                    <h4 class="my-3">Строительные организации</h4>
+                                    <ul>
+                                        <li>Контроль работы агрегатов и дополнительного оборудования;</li>
+                                        <li>Учет рабочего времени водителей/механизаторов;</li>
+                                        <li>Контроль прибытия техники на объекты;</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="logistics" class="section logistics">
+        <div class="container">
+            <div class="section-header">
+                <h2><span class="page-header">Как мы работаем</span></h2>
+                <div class="header-underline d-sm-none"></div>
+            </div>
+            <div class="row no-gutters">
+                <div class="col-xs-12 col-md-4 col-lg mt-2">
+                    <img class="img-fluid mb-3 mx-auto d-none d-lg-block" src="/img/icon_request.png" alt="Заявка">
+                    <img class="img-fluid mb-3 mx-auto d-block d-lg-none" src="/img/md/icon_request.png" alt="Заявка">
+                    <p class="text-center text-uppercase">Заявка</p>
+                    <p class="text-center text-justify">Вы звоните или оставляете заявку</p>
+                </div>
+                <div class="d-none d-lg-block col-lg mt-2">
+                    <img class="img-fluid mx-auto d-block mt-1" src="/img/dot_top.png" alt="">
+                </div>
+                <div class="col-xs-12 col-md-4 col-lg mt-2">
+                    <img class="img-fluid mb-3 mx-auto d-none d-lg-block" src="/img/icon_manager.png" alt="Менеджер">
+                    <img class="img-fluid mb-3 mx-auto d-block d-lg-none" src="/img/md/icon_manager.png" alt="Менеджер">
+                    <p class="text-center text-uppercase">Работа с менеджером</p>
+                    <p class="text-center text-justify">Мы связываемся с Вами для уточнения Ваших потребностей</p>
+                </div>
+                <div class="d-none d-lg-block col-lg mt-2">
+                    <img class="img-fluid mx-auto d-block mt-5" src="/img/dot_bottom.png" alt="">
+                </div>
+                <div class="col-xs-12 col-md-4 col-lg mt-2">
+                    <img class="img-fluid mb-3 mx-auto d-none d-lg-block" src="/img/icon_calc.png" alt="Калкуляция">
+                    <img class="img-fluid mb-3 mx-auto d-block d-lg-none" src="/img/md/icon_calc.png" alt="Калкуляция">
+                    <p class="text-center text-uppercase">Расчет стоимости</p>
+                    <p class="text-center text-justify">Делаем расчет. При необходимости выезжаем на обследование</p>
+                </div>
+                <div class="d-none d-lg-block col-lg mt-2">
+                    <img class="img-fluid mx-auto d-block mt-1" src="/img/dot_top.png" alt="">
+                </div>
+                <div class="col-xs-12 col-md-4 col-lg mx-auto mt-2">
+                    <img class="img-fluid mb-3 mx-auto d-none d-lg-block" src="/img/icon_install.png" alt="Монтаж">
+                    <img class="img-fluid mb-3 mx-auto d-block d-lg-none" src="/img/md/icon_install.png" alt="Монтаж">
+                    <p class="text-center text-uppercase">Монтаж</p>
+                    <p class="text-center text-justify">Заключаем договор. Выполняем монтажные работы</p>
+                </div>
+                <div class="d-none d-lg-block col-lg mt-2">
+                    <img class="img-fluid mx-auto d-block mt-5" src="/img/dot_bottom.png" alt="">
+                </div>
+                <div class="col-xs-12 col-md-4 col-lg mx-auto mt-2">
+                    <img class="img-fluid mb-3 mx-auto d-none d-lg-block" src="/img/icon_control.png" alt="Контроль">
+                    <img class="img-fluid mb-3 mx-auto d-block d-lg-none" src="/img/md/icon_control.png" alt="Контроль">
+                    <p class="text-center text-uppercase">Контроль</p>
+                    <p class="text-center text-justify">Вы получаете контроль над Вашими объектами</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="vendors" class="section vendors">
+        <div class="container">
+            <div class="section-header">
+                <h2><span class="page-header">Партнеры</span></h2>
+                <div class="header-underline d-sm-none"></div>
+            </div>
+            <div class="row">
+                <div class="col-xs-6 col-sm-4 col-lg-2">
+                    <div class="vendor-item">
+                        <img class="img-fluid" src="/img/logo_technoton.png" alt="Technoton">
+                    </div>
+                </div>
+                <div class="col-xs-6 col-sm-4 col-lg-2">
+                    <div class="vendor-item">
+                        <img class="img-fluid" src="/img/logo_teltonica.png" alt="Teltonica">
+                    </div>
+                </div>
+                <div class="col-xs-6 col-sm-4 col-lg-2">
+                    <div class="vendor-item">
+                        <img class="img-fluid" src="/img/logo_autograph.png" alt="Autograph">
+                    </div>
+                </div>
+                <div class="col-xs-6 col-sm-4 col-lg-2">
+                    <div class="vendor-item">
+                        <img class="img-fluid" src="/img/logo_navtelecom.png" alt="Navtelecom">
+                    </div>
+                </div>
+                <div class="col-xs-6 col-sm-4 col-lg-2">
+                    <div class="vendor-item">
+                        <img class="img-fluid" src="/img/logo_italon.png" alt="Italon">
+                    </div>
+                </div>
+                <div class="col-xs-6 col-sm-4 col-lg-2">
+                    <div class="vendor-item">
+                        <img class="img-fluid" src="/img/logo_arusnavi.png" alt="Arusnavi">
+                    </div>
+                </div>
+            </div><!-- /.row -->
+        </div><!-- /.container -->
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 order-md-0 order-lg-0">
+                    <img class="img-fluid mb-4" src="/img/footer_logo.png" alt="Curator">
+                    <p>ТОО "СК-Транк"<br>Республика Казахстан, г.Петропавловск"<br>ул.Конституции Казахстана, 34-1"</p>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-2 order-md-2 order-lg-1">
+                    <p class="pt-4">8 (7152) 50-11-00<br>8-777-553-35-50<br>E-mail: gps@curator.kz</p>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 order-md-3 order-lg-2">
+                    <ul class="list-unstyled pt-4">
+                        <li><a class="footer-menu" href="http://www.radiocity.kz" target="_blank">Интернет магазин</a></li>
+                        <li><a class="footer-menu" href="http://gps1.curator.kz/">Вход для зарегистрированных пользователей</a></li>
+                        <li><a class="footer-menu" href="http://gps1.curator.kz/?token=7c855223f884a6a9ff49b5d875ea743655862237ED749BD39315AB7F543093D807513339" target="_blank">Демо вход</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 order-md-1 order-lg-3">
+                    <div class="row">
+                        <div class="col">
+                            <h6>Скачайте приложение:</h6>
+                            <a href="https://play.google.com/store/apps/details?id=com.gurtam.wialon_local_1504&hl=ru" target="_blank">
+                                <img class="img-fluid" src="/img/google_play_button.png" alt="Google Play">
+                            </a>
+                            <a href="https://itunes.apple.com/ru/app/id1011136393" target="_blank">
+                                <img class="img-fluid" src="/img/app_store_button.png" alt="App Store">
+                            </a>
+                        </div>
+                        <div class="col">
+                            <p>Мы в Instagram:</p>
+                            <a href="https://instagram.com/curator.kz?utm_source=ig_profile_share&igshid=rmna2hpyhlde" target="_blank">
+                                <img class="img-fluid" src="/img/instagram_button.png" alt="Instagram">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <p class="copyright">Куратор ©
+                        <script type="text/javascript">
+                            document.write(new Date().getFullYear());
+                        </script> All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/js/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    <script src="/js/jquery.appear.js"></script>
+    <script src="/js/circle-progress.min.js"></script>
+    <script src="/js/curator.js"></script>
+    <script src="/js/lightbox.js"></script>
+    <script src="/js/device.js"></script>
+    <!-- «Сайтофициально.рф/обратный-звонок-бесплатно.html» {literal} -->
+    <script type="text/javascript">
+        if (device.desktop()) {
+            (function () {
+                var widget_id = "8146315936";
+                var s = document.createElement("script");
+                s.type = "text/javascript";
+                s.async = true;
+                s.src = "http://сайтофициально.рф/script/js/callback/" + widget_id + "/callback_st_of.js";
+                var ss = document.getElementsByTagName("script")[0];
+                ss.parentNode.insertBefore(s, ss);
+            })();
+        } else {
+            (function () {
+                var options = {
+                    whatsapp: "+77783688881", // WhatsApp number
+                    company_logo_url: "//curator.kz/img/ico.png", // URL of company logo (png, jpg, gif)
+                    greeting_message: "Здравствуйте! Отправьте нам сообщение через WhatsApp.", // Text of greeting message
+                    call_to_action: "Напишите нам", // Call to action
+                    position: "right", // Position may be 'right' or 'left'
+                };
+                var proto = document.location.protocol, host = "whatshelp.io", url = proto + "//static." + host;
+                var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url + '/widget-send-button/js/init.js';
+                s.onload = function () { WhWidgetSendButton.init(host, proto, options); };
+                var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
+            })();
+        }
+    </script> <!-- {/literal} «Сайтофициально.рф/обратный-звонок-бесплатно.html» -->
+    <style> div#wh-widget-send-button { bottom: 70px !important; } </style>
+    <script type="text/javascript">
+        (function (w, doc) {
+            if (!w.__utlWdgt) {
+                w.__utlWdgt = true;
+                var d = doc,
+                    s = d.createElement('script'),
+                    g = 'getElementsByTagName';
+                s.type = 'text/javascript';
+                s.charset = 'UTF-8';
+                s.async = true;
+                s.src = ('https:' == w.location.protocol ? 'https' : 'http') + '://w.uptolike.com/widgets/v1/uptolike.js';
+                var h = d[g]('body')[0];
+                h.appendChild(s);
+            }
+        })(window, document);
+    </script>
+    <div data-background-alpha="0.0" data-buttons-color="#FFFFFF" data-counter-background-color="#ffffff" data-share-counter-size="12" data-top-button="false" data-share-counter-type="disable" data-share-style="1" data-mode="share"
+        data-like-text-enable="false" data-mobile-view="true" data-icon-color="#ffffff" data-orientation="fixed-left" data-text-color="#000000" data-share-shape="round-rectangle" data-sn-ids="fb.vk.tw.ok." data-share-size="30"
+        data-background-color="#ffffff" data-preview-mobile="false" data-mobile-sn-ids="fb.vk.tw.wh.ok.vb." data-pid="1512106" data-counter-background-alpha="1.0" data-following-enable="false" data-exclude-show-more="false"
+        data-selection-enable="true" class="uptolike-buttons">
+    </div>
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+        (function (d, w, c) {
+            (w[c] = w[c] || []).push(function () {
+                try {
+                    w.yaCounter27848682 = new Ya.Metrika({
+                        id: 27848682,
+                        clickmap: true,
+                        trackLinks: true,
+                        accurateTrackBounce: true,
+                        webvisor: true
+                    });
+                } catch (e) {}
+            });
+            var n = d.getElementsByTagName("script")[0],
+                s = d.createElement("script"),
+                f = function () {
+                    n.parentNode.insertBefore(s, n);
+                };
+            s.type = "text/javascript";
+            s.async = true;
+            s.src = "https://mc.yandex.ru/metrika/watch.js";
+            if (w.opera == "[object Opera]") {
+                d.addEventListener("DOMContentLoaded", f, false);
+            } else {
+                f();
+            }
+        })(document, window, "yandex_metrika_callbacks");
+    </script>
+</body>
+
+</html>
