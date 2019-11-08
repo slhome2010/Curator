@@ -1,4 +1,8 @@
-<?php header('Content-type: text/html; charset=utf-8')?>
+<?php 
+header('Content-type: text/html; charset=utf-8');
+header('Set-Cookie: same-site-cookie=foo; SameSite=Lax');
+header('Set-Cookie: cross-site-cookie=bar; SameSite=None; Secure');
+?>
 <!DOCTYPE html>
 <html lang="ru">
 
@@ -10,7 +14,7 @@
     <meta name="description" content="<?php echo($description)?>">
     <meta name="keywords" content="<?php echo($keywords)?>">
     <link rel="icon" type="image/png" href="/img/ico.png" />
-    <link href="https://fonts.googleapis.com/css?family=Exo+2" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Exo+2&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     <link rel='stylesheet' href="/css/style.css" />
     <link rel='stylesheet' href="/css/animate.min.css" />

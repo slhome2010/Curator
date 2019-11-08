@@ -1,4 +1,8 @@
-<?php header('Content-type: text/html; charset=utf-8')?>
+<?php 
+header('Content-type: text/html; charset=utf-8');
+header('Set-Cookie: same-site-cookie=foo; SameSite=Lax');
+header('Set-Cookie: cross-site-cookie=bar; SameSite=None; Secure');
+?>
 <!DOCTYPE html>
 <html lang="ru">
 
@@ -10,7 +14,7 @@
     <meta name="description" content="Куратор система спутникового мониторинга. GPS/ГЛОНАСС мониторинг автотранспорта, спецтехники, электронные карты полей и контроль топлива">
     <meta name="keywords" content="GPS, ГЛОНАСС, GPS мониторинг, спутниковый мониторинг, контроль сливов, контроль топлива, слежение за техникой, слежение за автомобилем">
     <link rel="icon" type="image/png" href="/img/ico.png" />
-    <link href="https://fonts.googleapis.com/css?family=Exo+2" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Exo+2&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     <link rel='stylesheet' href="/css/style.css" />
     <link rel='stylesheet' href="/css/animate.min.css" />
@@ -66,7 +70,8 @@
                 <div class="d-flex flex-column flex-md-row justify-content-between">
                     <a href="/support/customer.pl" target="_blank" class="btn btn-outline-light rounded-0 mb-3 mb-md-2 mr-3" role="button" aria-pressed="true">Техподдержка</a>
                     <a href="http://gps1.curator.kz" target="_blank" class="btn btn-outline-light rounded-0 mb-3 mb-md-2 mr-3" role="button" aria-pressed="true">Мониторинг</a>
-                    <a href="http://gps1.curator.kz/?token=7c855223f884a6a9ff49b5d875ea743655862237ED749BD39315AB7F543093D807513339" target="_blank" class="btn btn-outline-light rounded-0 mb-3 mb-md-2 mr-3" role="button" aria-pressed="true">Демо
+                    <a href="http://gps1.curator.kz/?token=7c855223f884a6a9ff49b5d875ea743655862237ED749BD39315AB7F543093D807513339" target="_blank" class="btn btn-outline-light rounded-0 mb-3 mb-md-2 mr-3" role="button"
+                        aria-pressed="true">Демо
                         вход</a>
                 </div>
             </div>
@@ -425,9 +430,10 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
     <script src="/js/jquery.appear.js"></script>
     <script src="/js/circle-progress.min.js"></script>
-    <script src="/js/curator.js"></script>
     <script src="/js/lightbox.js"></script>
     <script src="/js/device.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.bundle.js"></script>
+    <script src="/js/curator.js"></script>
     <!-- «Сайтофициально.рф/обратный-звонок-бесплатно.html» {literal} -->
     <script type="text/javascript">
         if (device.desktop()) {
@@ -449,14 +455,26 @@
                     call_to_action: "Напишите нам", // Call to action
                     position: "right", // Position may be 'right' or 'left'
                 };
-                var proto = document.location.protocol, host = "whatshelp.io", url = proto + "//static." + host;
-                var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url + '/widget-send-button/js/init.js';
-                s.onload = function () { WhWidgetSendButton.init(host, proto, options); };
-                var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
+                var proto = document.location.protocol,
+                    host = "whatshelp.io",
+                    url = proto + "//static." + host;
+                var s = document.createElement('script');
+                s.type = 'text/javascript';
+                s.async = true;
+                s.src = url + '/widget-send-button/js/init.js';
+                s.onload = function () {
+                    WhWidgetSendButton.init(host, proto, options);
+                };
+                var x = document.getElementsByTagName('script')[0];
+                x.parentNode.insertBefore(s, x);
             })();
         }
     </script> <!-- {/literal} «Сайтофициально.рф/обратный-звонок-бесплатно.html» -->
-    <style> div#wh-widget-send-button { bottom: 70px !important; } </style>
+    <style>
+        div#wh-widget-send-button {
+            bottom: 70px !important;
+        }
+    </style>
     <script type="text/javascript">
         (function (w, doc) {
             if (!w.__utlWdgt) {
