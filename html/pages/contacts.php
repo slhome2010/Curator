@@ -22,11 +22,9 @@ $keywords = 'ониторинг транспорта, контакты, ТОО �
 				магазин&nbsp;"Радио City"
 			</address>
 			</p>
-			<p>
-				Контактное лицо:<br>
-				<strong>менеджер</strong> Лойко Максим<br>
+			<p>				
 				тел.: 8 (7152) 50-11-00<br>
-				моб.: <a class="nohighlight" href="tel:+77775533550">8-777-553-35-50</a><br>
+				моб.: <a class="nohighlight" href="tel:+77772979100">8-777-553-35-50</a><br>
 				e-mail: <a class="nohighlight" href="mailto:gps@curator.kz">gps@curator.kz</a><br>
 			<p>
 		</div>	

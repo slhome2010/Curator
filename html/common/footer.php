@@ -7,7 +7,7 @@
                 <p>ТОО "СК-Транк"<br>Республика Казахстан, г.Петропавловск"<br>ул.Конституции Казахстана, 34-1"</p>
             </div>
             <div class="col-xs-12 col-sm-6 col-md-6 col-lg-2 order-md-2 order-lg-1">
-                <p class="pt-4"><a href="tel:+77775533550">8-777-553-35-50</a><br><a href="tel:+77152501100">8 (7152) 50-11-00</a><br>E-mail: gps@curator.kz</p>
+                <p class="pt-4"><a href="tel:+77772979100">8-777-297-91-00</a><br><a href="tel:+77152501100">8 (7152) 50-11-00</a><br>E-mail: gps@curator.kz</p>
             </div>
             <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 order-md-3 order-lg-2">
                 <ul class="list-unstyled pt-4">
@@ -70,7 +70,7 @@ if (device.desktop()) {
 } else {
     (function() {
         var options = {
-            whatsapp: "+77775533550", // WhatsApp number
+            whatsapp: "+77772979100", // WhatsApp number
             company_logo_url: "//curator.kz/img/ico.png", // URL of company logo (png, jpg, gif)
             greeting_message: "Здравствуйте! Отправьте нам сообщение через WhatsApp.", // Text of greeting message
             call_to_action: "Напишите нам", // Call to action
