@@ -54,6 +54,7 @@
 <script src="/js/lightbox.js"></script>
 <script src="/js/device.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.bundle.js"></script>
+<script src="/js/glide.min.js"></script>
 <script src="/js/curator.js"></script>
 <!-- «Сайтофициально.рф/обратный-звонок-бесплатно.html» {literal} -->
 <script type="text/javascript">

@@ -93,6 +93,8 @@ document.cookie = 'cross-site-cookie=bar; SameSite=None; Secure';
       $(this).addClass("fadeInLeft");
     });
   });
+
+  //new Glide('.glide').mount()
 })(jQuery);
 
 /* Charts */

@@ -429,7 +429,7 @@ a:hover {
 }
 
 .circle {
-  /* width: 100px; */
+  /* width и: 100px; */
   margin: 20px 0 20px;
   display: inline-block;
   position: relative;
@@ -563,5 +563,211 @@ a:hover {
   .media .media-image {
       width: 250px;
       background-color: rgba(85, 144, 172, 1.0);
+  }
+}
+.fon{
+  background-color: #f2f5f0;
+}
+.firsth{
+  text-align: center;
+  margin-bottom: 5px;
+  font-weight: 700;
+  
+}
+.h2size{
+  text-align: center;
+  margin-top: 0px;
+}
+.pd-20{
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.sectionshir{
+ /*  max-width: 1280px; */
+  width: 100%;
+}
+.sectionshir ul{  
+   padding-left: 10px;
+ }
+.glide .col6{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+figure{
+  margin: 0;
+}
+img{
+  width: 100%;
+}
+.h200{
+  height: 300px;
+}
+.slidetxt{
+  background-color: #a3c3b4;
+  position: relative;
+  padding: 80px 80px;
+}
+.slidetxt p{
+  color: #2c5a61;
+  font-size: 30px;
+}
+.slidetxt::after{
+  content: '';
+  display:block;
+  width: 23%;
+  height: 45%;
+  position: absolute;
+  background-image: url(/img/agriculture/About.png);
+  bottom: 0;
+  background-size: contain;
+  background-repeat: no-repeat;
+  right: 0px;
+}
+.glide__arrow{
+  border-radius: 50%;
+  border-color: #fff;
+  height: 40px;
+  width: 40px;
+  background-color: transparent;
+  border: 2px solid #fff;
+  padding-top: 4px;
+  padding-left: 5px;
+}
+.glide__arrow svg{
+  height: 20px;
+  width: 20px;
+  margin: 0 auto;
+  fill:#fff;
+}
+.glide__arrows{
+  position: absolute;
+  top: 42%;
+  justify-content: space-between;
+  display: flex;
+  width: 100%;
+  padding: 0 17px;
+}
+.sectext{
+  text-align: center;
+  font-weight: 500;
+
+}
+.card_block{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 40px;
+  grid-row-gap: 20px;
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+}
+.card_item{
+  background-color: #fff;
+  border-radius: 50px;
+  padding: 15px 15px 50px 15px;
+  position: relative;
+}
+.card_item h3{
+  text-align: center;
+  font-weight: 700;
+}
+.anal::after{
+  content: '';
+  display:block;
+  width: 23%;
+  height: 45%;
+  position: absolute;
+  background-image: url(/img/agriculture/Analytics.png);
+  bottom: 0;
+  background-size: contain;
+  background-repeat: no-repeat;
+  right: 0px;
+}
+.snimki::after{
+  content: '';
+  display:block;
+  width: 23%;
+  height: 45%;
+  position: absolute;
+  background-image: url(/img/agriculture/1.png);
+  bottom: 0;
+  background-size: contain;
+  background-repeat: no-repeat;
+  right: 0px;
+}
+.agro::after{
+  content: '';
+  display:block;
+  width: 23%;
+  height: 45%;
+  position: absolute;
+  background-image: url(/img/agriculture/Team.png);
+  bottom: 0;
+  background-size: contain;
+  background-repeat: no-repeat;
+  right: 0px;
+}
+.uprav::after{
+  content: '';
+  display:block;
+  width: 23%;
+  height: 45%;
+  position: absolute;
+  background-image: url(/img/agriculture/Profile.png);
+  bottom: 0;
+  background-size: contain;
+  background-repeat: no-repeat;
+  right: 0px;
+}
+.telemat::after{
+  content: '';
+  display:block;
+  width: 23%;
+  height: 45%;
+  position: absolute;
+  background-image: url(/img/agriculture/Telematics.png);
+  bottom: 0;
+  background-size: contain;
+  background-repeat: no-repeat;
+  right: 0px;
+}
+.analis::after{
+  content: '';
+  display:block;
+  width: 23%;
+  height: 45%;
+  position: absolute;
+  background-image: url(/img/agriculture/Chemical.png);
+  bottom: 0;
+  background-size: contain;
+  background-repeat: no-repeat;
+  right: 0px;
+}
+.w-1000{
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+.mt-50{
+  margin-top: 50px;
+  margin-bottom: 25px;
+}
+.mb-50{
+  margin-bottom: 50px;
+}
+@media(max-width: 1000px){
+   .h200{
+       height: 100%;
+   }
+}
+@media(max-width: 650px){
+  .card_block{
+      grid-template-columns: 1fr;
+      grid-column-gap: 0 ;
+  }
+  .glide .col6{
+      grid-template-columns: 1fr;
+      grid-column-gap: 0 ;
   }
 }

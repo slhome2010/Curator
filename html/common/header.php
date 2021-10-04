@@ -19,6 +19,7 @@ header('Set-Cookie: cross-site-cookie=bar; SameSite=None; Secure');
     <link rel='stylesheet' href="/css/style.css" />
     <link rel='stylesheet' href="/css/animate.min.css" />
     <link rel='stylesheet' href="/css/lightbox.css" />
+    <link rel='stylesheet' href="/css/glide.core.min.css">
 </head>
 
 <body class="home">
@@ -35,6 +36,9 @@ header('Set-Cookie: cross-site-cookie=bar; SameSite=None; Secure');
                     <ul class="navbar-nav">
                         <li class="nav-item">
                             <a class="nav-link" href="/">Главная<span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link <?if (isset($active_menu) and $active_menu == 'Egistic') echo ' active'; ?>" href="/agriculture">Egistic</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link <?if (isset($active_menu) and $active_menu == 'Оборудование') echo ' active'; ?>" href="/device/">Оборудование</a>
